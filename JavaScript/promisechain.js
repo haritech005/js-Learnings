@@ -30,9 +30,7 @@
 
 const cart = ["note", "book", "pen"];
 
-const promise = createOrder(cart);
-
-promise
+createOrder(cart)
   .then(function (orderId) {
     console.log(orderId);
     return;

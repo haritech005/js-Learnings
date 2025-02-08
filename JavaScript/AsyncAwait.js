@@ -36,15 +36,15 @@
 
 
 
-async function apiCall() {
-  const url = "https://fakestoreapi.com/products";
-  const products = await fetch(url);
-  const data = await products.json()
-  console.log(data);
+// async function apiCall() {
+//   const url = "https://fakestoreapi.com/products";
+//   const products = await fetch(url);
+//   const data = await products.json()
+//   console.log(data);
 
 
-  data.map((datas) => console.log(datas.title)
-  )
-}
+//   data.map((datas) => console.log(datas.title)
+//   )
+// }
 
-apiCall()
+// apiCall()

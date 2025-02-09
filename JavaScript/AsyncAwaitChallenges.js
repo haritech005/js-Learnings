@@ -35,7 +35,6 @@
 
 // async function waitAndGreet() {
 //   const data = await p;
-//   const res = await data
 //   console.log(res);
 // }
 
@@ -51,15 +50,15 @@
 // fetchInParallel() runs faster because both requests happen simultaneously.
 // ✅ Hint: Use Promise.all([fetch(url1), fetch(url2)]).
 
-var URL1 = "https://jsonplaceholder.typicode.com/posts/1";
-var URL2 = "https://jsonplaceholder.typicode.com/posts/2";
+// var URL1 = "https://jsonplaceholder.typicode.com/posts/1";
+// var URL2 = "https://jsonplaceholder.typicode.com/posts/2";
 
-async function fetchInParallel() {
-  const responses = await Promise.all([fetch(URL1), fetch(URL2)]);
-  const data = await Promise.all(responses.map((response) => response.json()));
-  console.log(data);
-}
-fetchInParallel();
+// async function fetchInParallel() {
+//   const responses = await Promise.all([fetch(URL1), fetch(URL2)]);
+//   const data = await Promise.all(responses.map((response) => response.json()));
+//   console.log(data);
+// }
+// fetchInParallel();
 
 // async function fetchSequentially() {
 //   const p1 = await fetch(URL1);
